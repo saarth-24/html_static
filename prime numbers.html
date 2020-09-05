@@ -1,0 +1,26 @@
+<html>
+<body>
+<input id="id1" input type="text" placeholder="enter your name">
+<button onclick="getValue()">submit</button>
+<p id="id2"></p>
+<script>
+    function getValue() {
+        var a= document.querySelector("#id1").value
+        document.querySelector("#id2").innerHTML=a; 
+    isprime(a)
+    function isprime(num){
+        var i;
+        var num;
+       for(i=2; i<num; i++){
+           if(num%i === 0){
+               document.write(num+"is not a prime number")
+               return false;
+           }
+       document.write(num+"is a prime number")
+       return true;
+        }
+    }
+}  
+ </Script>                      
+</body>
+</html>
